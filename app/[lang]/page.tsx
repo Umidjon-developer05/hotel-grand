@@ -1,0 +1,169 @@
+import { Button } from '@/components/ui/button'
+import { Card, CardContent } from '@/components/ui/card'
+import {
+	Carousel,
+	CarouselContent,
+	CarouselItem,
+	CarouselNext,
+	CarouselPrevious,
+} from '@/components/ui/carousel'
+import YotubeVideo from '@/components/YotubeVideo'
+import { Dictionary, getDictionary } from '@/lib/dictionaries'
+import Image from 'next/image'
+import Link from 'next/link'
+
+const heroImages = (dictionary: Dictionary) => [
+	{
+		src: '/minora.webp',
+		title: dictionary.MainCarusel.title1,
+		description: dictionary.MainCarusel.bio1,
+	},
+	{
+		src: '/muzey3.jpg',
+		title: dictionary.MainCarusel.title2,
+		description: dictionary.MainCarusel.bio2,
+	},
+	{
+		src: '/Banner.jpg',
+		title: dictionary.MainCarusel.title3,
+		description: dictionary.MainCarusel.bio3,
+	},
+]
+
+const rooms = [
+	{
+		id: 1,
+		name: 'Standart Xona',
+		price: 60,
+		image: '/mehmonxona/image-3.jpg',
+	},
+	{
+		id: 2,
+		name: 'Deluxe Xona',
+		price: 60,
+		image: '/mehmonxona/image-2.jpg',
+	},
+	{
+		id: 3,
+		name: 'Suite Xona',
+		price: 60,
+		image: '/mehmonxona/image-4.jpg',
+	},
+	{
+		id: 4,
+		name: 'Tarixiy Xona',
+		price: 60,
+		image: '/mehmonxona/tarixiy-xona.jpg',
+	},
+]
+
+export default async function HomePage({
+	params,
+}: {
+	params: { lang: 'en' | 'uz' }
+}) {
+	const { lang } = await params
+	const dictionary = await getDictionary(lang)
+	const images = heroImages(dictionary)
+
+	return (
+		<div className='space-y-12'>
+			{/* Hero Carousel */}
+			<section className='relative'>
+				<Carousel className='w-full rounded-md'>
+					<CarouselContent>
+						{images.map((image, index) => (
+							<CarouselItem key={index}>
+								<div className='relative h-[600px] w-full'>
+									<Image
+										src={image.src || '/placeholder.svg'}
+										alt={image.title}
+										fill
+										className='object-cover rounded-md'
+										priority={index === 0}
+									/>
+									<div className='absolute inset-0 bg-black/40 flex items-center justify-center'>
+										<div className='text-center text-white space-y-4'>
+											<h1 className='text-4xl md:text-6xl font-bold'>
+												{image.title}
+											</h1>
+											<p className='text-xl md:text-2xl'>{image.description}</p>
+										</div>
+									</div>
+								</div>
+							</CarouselItem>
+						))}
+					</CarouselContent>
+
+					<CarouselPrevious className='left-4' />
+					<CarouselNext className='right-4' />
+				</Carousel>
+			</section>
+
+			{/* About Section */}
+			<section className='container py-12'>
+				<div className='max-w-4xl mx-auto text-center space-y-6'>
+					<h2 className='text-3xl md:text-4xl font-bold'>
+						{dictionary?.history.title}
+					</h2>
+					<p className='text-lg text-muted-foreground leading-relaxed'>
+						{dictionary?.history.bio}
+					</p>
+					<Button asChild size='lg'>
+						<Link href='/tarix'>{dictionary?.history.button}</Link>
+					</Button>
+				</div>
+			</section>
+			{/* Youtube video */}
+			<YotubeVideo />
+			{/* Rooms Section */}
+			<section className='container py-12'>
+				<div className='space-y-8'>
+					<div className='text-center space-y-4'>
+						<h2 className='text-3xl md:text-4xl font-bold'>
+							{dictionary?.house?.title}
+						</h2>
+						<p className='text-lg text-muted-foreground'>
+							{dictionary?.house?.bio}
+						</p>
+					</div>
+
+					<div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
+						{rooms.map(room => (
+							<Card key={room.id} className='overflow-hidden'>
+								<div className='relative h-48'>
+									<Image
+										src={room.image || '/placeholder.svg'}
+										alt={room.name}
+										fill
+										className='object-cover'
+									/>
+								</div>
+								<CardContent className='p-4 space-y-3'>
+									<h3 className='font-semibold text-lg'>{room.name}</h3>
+									<p className='text-2xl font-bold text-primary'>
+										${room.price}
+										<span className='text-sm font-normal text-muted-foreground'>
+											/kecha
+										</span>
+									</p>
+									<Button asChild className='w-full'>
+										<Link href='https://wa.me/998936265703' target='_blank'>
+											{dictionary?.navbar?.make}
+										</Link>
+									</Button>
+								</CardContent>
+							</Card>
+						))}
+					</div>
+
+					<div className='text-center'>
+						<Button asChild variant='outline' size='lg'>
+							<Link href='/xonalar'>{dictionary?.house?.button}</Link>
+						</Button>
+					</div>
+				</div>
+			</section>
+		</div>
+	)
+}

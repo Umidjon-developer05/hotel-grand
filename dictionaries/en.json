@@ -1,0 +1,39 @@
+{
+	"languages": {
+		"switchLanguage": "Switch Language",
+		"english": "English",
+		"uzbek": "Uzbek"
+	},
+	"navbar": {
+		"home": "Home",
+		"house": "House",
+		"history": "History",
+		"contact": "Contact",
+		"make": "Make a reservation"
+	},
+	"MainCarusel": {
+		"title1": "A hotel with a 400-year history",
+		"bio1": "Historic building built in 1625",
+		"title2": "Modern amenities",
+		"bio2": "Historic setting and modern services",
+		"title3": "Unique architecture",
+		"bio3": "European style interior design"
+	},
+	"history": {
+		"title": "Our historical hotel",
+		"bio": "Our hotel was built in 1625 and has a rich history of 400 years. It offers a combination of modern amenities and a historic setting. Each room has its own historical features, providing guests with an unforgettable experience.",
+		"button": "history Learn more"
+	},
+	"house": {
+		"title": "Our rooms",
+		"bio": "Each room combines a historic atmosphere and modern amenities",
+		"button": "house Learn more"
+	},
+	"footer": {
+		"social": "Social Media",
+		"contact": "contact",
+		"website": "Website",
+		"bio": "This hotel has a 400-year history and warmly welcomes every guest.",
+		"fow": "© 2024 Grand Nodirbek Hotel. All rights reserved."
+	}
+}

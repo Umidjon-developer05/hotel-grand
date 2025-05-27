@@ -1,0 +1,39 @@
+{
+	"languages": {
+		"switchLanguage": "Tilni O'zgartirish",
+		"english": "Inglizcha",
+		"uzbek": "O'zbekcha"
+	},
+	"navbar": {
+		"home": "Bosh sahifa",
+		"house": "Uy",
+		"history": "Tarix",
+		"contact": "Aloqa",
+		"make": "Bron qilish"
+	},
+	"MainCarusel": {
+		"title1": "400 yillik tarixga ega mehmonxona",
+		"bio1": "1625 yilda qurilgan tarixiy bino",
+		"title2": "Zamonaviy qulayliklar",
+		"bio2": "Tarixiy muhit va zamonaviy xizmatlar",
+		"title3": "Noyob arxitektura",
+		"bio3": "Yevropa uslubidagi ichki dizayn"
+	},
+	"history": {
+		"title": "Bizning tarixiy mehmonxonamiz",
+		"bio": "Bizning mehmonxonamiz 1625 yilda qurilgan bo'lib, 400 yillik boy tarixga ega. U zamonaviy qulayliklar va tarixiy muhit uyg'unligini taqdim etadi. Har bir xona o'ziga xos tarixiy xususiyatlarga ega bo'lib, mehmonlarga unutilmas tajriba taqdim etadi.",
+		"button": "Tarix haqida ko'proq bilish"
+	},
+	"house": {
+		"title": "Bizning xonalarimiz",
+		"bio": "Har bir xona tarixiy muhit va zamonaviy qulayliklarni birlashtiradi",
+		"button": "Xonalar haqida ko'proq bilish"
+	},
+	"footer": {
+		"social": "Ijtimoiy tarmoqlar",
+		"contact": "Aloqa",
+		"website": "Veb-sayt",
+		"bio": "Bu mehmonxona 400 yillik tarixga ega bo'lib, har bir mehmonni samimiy kutib oladi.",
+		"fow": "© 2024 Grand Nodirbek Hotel. Barcha huquqlar himoyalangan."
+	}
+}
