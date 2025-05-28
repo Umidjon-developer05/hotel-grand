@@ -127,7 +127,7 @@ export default function Aloqaform({ dictionary }: { dictionary: Dictionary }) {
 								<div>
 									<p className='font-medium'>Ish vaqti</p>
 									<p className='text-muted-foreground'>
-										08:00 - 22:00, Dushanba - Yakshanba
+										24/7, Dushanba - Yakshanba
 									</p>
 								</div>
 							</div>
@@ -149,8 +149,8 @@ export default function Aloqaform({ dictionary }: { dictionary: Dictionary }) {
 						<CardContent>
 							<div className='relative h-64 bg-muted rounded-lg overflow-hidden'>
 								<iframe
-									src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2996.5!2d69.2401!3d41.2995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDE3JzU4LjIiTiA2OcKwMTQnMjQuNCJF!5e0!3m2!1sen!2s!4v1234567890'
-									width='100%'
+									src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12240.010252830605!2d64.420146!3d39.772323!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMznCsDQ2JzIwLjQiTiA2NMKwMjUnMTIuNSJF!5e0!3m2!1sen!2s!4v1716900000000'
+									width='600'
 									height='100%'
 									style={{ border: 0 }}
 									allowFullScreen

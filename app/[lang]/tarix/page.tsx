@@ -5,32 +5,39 @@ import { Dictionary, getDictionary } from '@/lib/dictionaries'
 
 const timelineEvents = (dictionary: Dictionary) => [
 	{
-		year: '1625',
+		year: 'XVII centry',
 		title: dictionary.historyPage?.bio1,
 		description: dictionary.historyPage?.bio2,
 		details: dictionary.historyPage?.p,
-		image: '/tarix/image-grand-11.jpg',
+		image: '/tarix/image.png',
 	},
 	{
-		year: '1800',
+		year: 'XIX centry',
 		title: dictionary.historyPage?.bio3,
 		description: dictionary.historyPage?.bio4,
 		details: dictionary.historyPage?.p1,
-		image: '/tarix/photo_2025-05-27_23-52-24.jpg',
+		image: '/tarix/padval.jpg',
 	},
 	{
-		year: '1950',
+		year: 'XIX centry',
 		title: dictionary.historyPage?.bio5,
 		description: dictionary.historyPage?.bio6,
 		details: dictionary.historyPage?.p2,
-		image: '/tarix/photo_2025-05-27_23-52-30.jpg',
+		image: '/tarix/restaruant.jpg',
 	},
 	{
-		year: '2020',
+		year: 'XIX centry',
 		title: dictionary.historyPage?.bio7,
 		description: dictionary.historyPage?.bio8,
 		details: dictionary.historyPage?.p3,
-		image: '/tarix/photo_2025-05-27_23-52-35.jpg',
+		image: '/tarix/galery.jpg',
+	},
+	{
+		year: '',
+		title: dictionary.historyPage?.bio9,
+		description: dictionary.historyPage?.bio10,
+		details: dictionary.historyPage?.p3,
+		image: '/tarix/osh.jpg',
 	},
 ]
 
