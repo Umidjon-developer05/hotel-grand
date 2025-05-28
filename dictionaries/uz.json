@@ -24,6 +24,32 @@
 		"bio": "Bizning mehmonxonamiz 1625 yilda qurilgan bo'lib, 400 yillik boy tarixga ega. U zamonaviy qulayliklar va tarixiy muhit uyg'unligini taqdim etadi. Har bir xona o'ziga xos tarixiy xususiyatlarga ega bo'lib, mehmonlarga unutilmas tajriba taqdim etadi.",
 		"button": "Tarix haqida ko'proq bilish"
 	},
+	"historyPage": {
+		"title": "Bizning tarixiy mehmonxonamiz",
+		"bio": "400 yillik tarix davomida mehmonxonamiz ko'plab o'zgarishlarni boshdan kechirdi, lekin har doim mehmonlarga eng yaxshi xizmat ko'rsatishga intildi.",
+		"bio1": "Qurilgan",
+		"bio2": "Tarixiy madrasaning mehmonxonaga aylanishi",
+		"p": "Bu yil mehmonxona binosi asoschisi tomonidan qurilgan. Dastlab diniy ta'lim muassasasi sifatida ishlatilgan.",
+		"bio3": "Ta'mirlangan",
+		"bio4": "Yevropa uslubidagi ichki dizayn",
+		"p1": "XIX asrda bino to'liq qayta ta'mirlandi va Yevropa arxitektura uslubida bezatildi. Bu davrda zamonaviy qulayliklar qo'shildi.",
+		"bio5": "Zamonaviy qulayliklar",
+		"bio6": "Zamonaviy aloqa tizimlari",
+		"p2": "20-asrning o'rtalarida binoda elektr, suv va kanalizatsiya tizimlari o'rnatildi. Bu mehmonxonaning zamonaviy standartlarga javob berishini ta'minladi.",
+		"bio7": "Mehmonxonaga aylantirildi",
+		"bio8": "To'liq ta'mirdan so'ng, mehmonxona sifatida ochildi",
+		"p3": "Eng so'nggi ta'mirlash natijasida bino zamonaviy mehmonxona sifatida qayta ochildi. Tarixiy xususiyatlar saqlanib qolindi.",
+		"today": "Bugun",
+		"desc": "Bugungi kunda bizning mehmonxonamiz zamonaviy qulayliklar va tarixiy muhit uyg'unligini taklif etadi. Har bir mehmon o'zini alohida his qilishi uchun xizmat sifatini doimo yaxshilashga harakat qilamiz."
+	},
+	"contact": {
+		"title": "Biz bilan bog'laning",
+		"bio": "Biz har doim sizning savollaringizga javob berishga va bron qilishda yordam berishga tayyormiz.",
+		"address": "Manzil",
+		"phone": "Telefon",
+		"email": "Elektron pochta",
+		"button": "Aloqa xabar yuborish"
+	},
 	"house": {
 		"title": "Bizning xonalarimiz",
 		"bio": "Har bir xona tarixiy muhit va zamonaviy qulayliklarni birlashtiradi",

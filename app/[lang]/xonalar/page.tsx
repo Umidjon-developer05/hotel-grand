@@ -4,6 +4,7 @@ import { Badge } from '@/components/ui/badge'
 import Image from 'next/image'
 import Link from 'next/link'
 import { Wifi, Coffee, Tv, Bath, AirVent } from 'lucide-react'
+import { getDictionary } from '@/lib/dictionaries'
 
 const rooms = [
 	{
@@ -85,14 +86,20 @@ const amenityIcons = {
 	Spa: Bath,
 }
 
-export default function RoomsPage() {
+export default async function RoomsPage({
+	params,
+}: {
+	params: Promise<{ lang: 'en' | 'uz' }>
+}) {
+	const { lang } = await params
+	const dictionary = await getDictionary(lang)
+
 	return (
 		<div className='container py-12 space-y-8'>
 			<div className='text-center space-y-4'>
-				<h1 className='text-4xl font-bold'>Bizning xonalar</h1>
+				<h1 className='text-4xl font-bold'>{dictionary.house.title}</h1>
 				<p className='text-lg text-muted-foreground max-w-2xl mx-auto'>
-					Har bir xona o&#39;ziga xos xususiyatlarga ega bo&#39;lib, mehmonlarga
-					maksimal qulaylik va tarixiy muhitni taqdim etadi
+					{dictionary.house.bio}
 				</p>
 			</div>
 

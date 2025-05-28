@@ -1,62 +1,63 @@
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import Image from 'next/image'
+import { Dictionary, getDictionary } from '@/lib/dictionaries'
 
-const timelineEvents = [
+const timelineEvents = (dictionary: Dictionary) => [
 	{
 		year: '1625',
-		title: 'Qurilgan',
-		description: 'Tarixiy madrasaning mehmonxonaga aylanishi',
-		details:
-			"Bu yil mehmonxona binosining asoschisi tomonidan qurilgan. Dastlab u diniy ta'lim muassasasi sifatida foydalanilgan.",
+		title: dictionary.historyPage?.bio1,
+		description: dictionary.historyPage?.bio2,
+		details: dictionary.historyPage?.p,
 		image: '/tarix/image-grand-11.jpg',
 	},
 	{
 		year: '1800',
-		title: "Qayta ta'mirlangan",
-		description: 'Yevropa uslubidagi ichki dizayn',
-		details:
-			"XIX asrda bino to'liq qayta ta'mirlandi va Yevropa arxitektura uslubida bezatildi. Bu davrda zamonaviy qulayliklar qo'shildi.",
+		title: dictionary.historyPage?.bio3,
+		description: dictionary.historyPage?.bio4,
+		details: dictionary.historyPage?.p1,
 		image: '/tarix/photo_2025-05-27_23-52-24.jpg',
 	},
 	{
 		year: '1950',
-		title: 'Modernizatsiya',
-		description: 'Zamonaviy kommunikatsiya tizimlari',
-		details:
-			"XX asr o'rtalarida binoga elektr, suv va kanalizatsiya tizimlari o'rnatildi. Bu mehmonxonaning zamonaviy standartlarga javob berishini ta'minladi.",
+		title: dictionary.historyPage?.bio5,
+		description: dictionary.historyPage?.bio6,
+		details: dictionary.historyPage?.p2,
 		image: '/tarix/photo_2025-05-27_23-52-30.jpg',
 	},
 	{
 		year: '2020',
-		title: 'Hotelga aylantirilgan',
-		description: "To'liq restavratsiyadan so'ng mehmonxonaga aylantirildi",
-		details:
-			"Eng so'nggi restavratsiya natijasida bino zamonaviy mehmonxona sifatida qayta ochildi. Tarixiy xususiyatlar saqlanib qoldi.",
+		title: dictionary.historyPage?.bio7,
+		description: dictionary.historyPage?.bio8,
+		details: dictionary.historyPage?.p3,
 		image: '/tarix/photo_2025-05-27_23-52-35.jpg',
 	},
 ]
 
-export default function HistoryPage() {
+export default async function HistoryPage({
+	params,
+}: {
+	params: Promise<{ lang: 'en' | 'uz' }>
+}) {
+	const { lang } = await params
+	const dictionary = await getDictionary(lang)
+	const events = timelineEvents(dictionary)
+
 	return (
 		<div className='container py-12 space-y-12'>
 			<div className='text-center space-y-4'>
-				<h1 className='text-4xl font-bold'>Bizning tariximiz</h1>
+				<h1 className='text-4xl font-bold'>{dictionary?.history?.title}</h1>
 				<p className='text-lg text-muted-foreground max-w-3xl mx-auto'>
-					400 yillik tarix davomida bizning mehmonxona ko&apos;plab
-					o&apos;zgarishlarni boshdan kechirdi, lekin har doim mehmonlarga eng
-					yaxshi xizmatni taqdim etishga intildi.
+					{dictionary?.history?.bio}
 				</p>
 			</div>
 
 			<div className='relative'>
-				{/* Timeline line */}
 				<div className='absolute left-1/2 transform -translate-x-px h-full w-0.5 bg-border hidden lg:block'></div>
 
 				<div className='space-y-12'>
-					{timelineEvents.map((event, index) => (
+					{events.map((event, index) => (
 						<div key={event.year} className='relative'>
-							{/* Timeline dot */}
 							<div className='absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-background hidden lg:block'></div>
 
 							<div
@@ -89,7 +90,7 @@ export default function HistoryPage() {
 									<Card className='overflow-hidden'>
 										<div className='relative h-64'>
 											<Image
-												src={event.image || '/ '}
+												src={event.image}
 												alt={event.title}
 												fill
 												className='object-cover'
@@ -104,12 +105,9 @@ export default function HistoryPage() {
 			</div>
 
 			<div className='text-center space-y-6 pt-12 border-t'>
-				<h2 className='text-3xl font-bold'>Bugungi kun</h2>
+				<h2 className='text-3xl font-bold'>{dictionary.historyPage?.today}</h2>
 				<p className='text-lg text-muted-foreground max-w-3xl mx-auto'>
-					Bugun bizning mehmonxona zamonaviy qulayliklar va tarixiy muhitning
-					mukammal uyg&apos;unligini taqdim etadi. Har bir mehmon o&apos;zini
-					maxsus his qilishi uchun biz doimo xizmat sifatini yaxshilashga
-					harakat qilamiz.
+					{dictionary.historyPage?.desc}
 				</p>
 			</div>
 		</div>

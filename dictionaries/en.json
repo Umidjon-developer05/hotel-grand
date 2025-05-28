@@ -24,6 +24,32 @@
 		"bio": "Our hotel was built in 1625 and has a rich history of 400 years. It offers a combination of modern amenities and a historic setting. Each room has its own historical features, providing guests with an unforgettable experience.",
 		"button": "history Learn more"
 	},
+	"historyPage": {
+		"title": "Our historical ",
+		"bio": "Throughout its 400-year history, our hotel has undergone many changes, but has always sought to provide the best service to its guests.",
+		"bio1": "Built",
+		"bio2": "The transformation of the historic madrasa into a hotel",
+		"p": "This year, the hotel was built by the founder of the building. It was originally used as a religious educational institution.",
+		"bio3": "Renovated",
+		"bio4": "European style interior design",
+		"p1": "XIX asrda bino to'liq qayta ta'mirlandi va Yevropa arxitektura uslubida bezatildi. Bu davrda zamonaviy qulayliklar qo'shildi.",
+		"bio5": "Modern amenities",
+		"bio6": "Modern communication systems",
+		"p2": "In the mid-20th century, electrical, water, and sewer systems were installed in the building. This ensured that the hotel met modern standards.",
+		"bio7": "Converted to a hotel",
+		"bio8": "After a complete restoration, it was converted into a hotel",
+		"p3": "As a result of the most recent restoration, the building was reopened as a modern hotel. Historical features have been preserved.",
+		"today": " Today",
+		"desc": "Today our hotel offers a perfect combination of modern amenities and historical atmosphere. In order for each guest to feel special, we always try to improve the quality of Service."
+	},
+	"contact": {
+		"title": "Contact us",
+		"bio": "We are always ready to answer your questions and help you with your reservation.",
+		"address": "Address",
+		"phone": "Phone",
+		"email": "Email",
+		"button": "contact Send message"
+	},
 	"house": {
 		"title": "Our rooms",
 		"bio": "Each room combines a historic atmosphere and modern amenities",
