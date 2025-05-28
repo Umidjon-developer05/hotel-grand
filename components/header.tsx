@@ -12,6 +12,7 @@ const navigation = [
 	{ name: 'history', href: '/tarix' },
 	{ name: 'contact', href: '/aloqa' },
 ]
+
 interface LanguageSwitcherProps {
 	currentLang: 'en' | 'uz'
 	dictionary: {
@@ -33,13 +34,19 @@ interface LanguageSwitcherProps {
 export function Header({ currentLang, dictionary }: LanguageSwitcherProps) {
 	const pathname = usePathname()
 	const t = dictionary.navbar
+
 	return (
-		<header className='sticky top-0 z-50 p-3 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'>
-			<div className='container flex h-16 items-center'>
-				<Link href='/' className='flex items-center space-x-2'>
-					<span className='text-xl font-bold'>Hotel Grand Nodirbek</span>
-				</Link>
-				<nav className='flex items-center space-x-6 text-sm font-medium ml-6'>
+		<header className='sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60'>
+			<div className='container px-4 py-3 flex flex-col gap-4 md:flex-row md:items-center md:justify-between'>
+				{/* Logo */}
+				<div className='flex items-center justify-between'>
+					<Link href='/' className='text-xl font-bold'>
+						Hotel Grand Nodirbek
+					</Link>
+				</div>
+
+				{/* Navigation */}
+				<nav className='flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-6 text-sm font-medium'>
 					{navigation.map(item => (
 						<Link
 							key={item.href}
@@ -51,13 +58,13 @@ export function Header({ currentLang, dictionary }: LanguageSwitcherProps) {
 									: 'text-foreground/60'
 							)}
 						>
-							{t
-								? (t as { [key: string]: string | undefined })[item.name]
-								: item.name}
+							{t ? t[item.name as keyof typeof t] || item.name : item.name}
 						</Link>
 					))}
 				</nav>
-				<div className='ml-auto flex items-center space-x-4 gap-2 '>
+
+				{/* Language switcher and button */}
+				<div className='flex flex-col md:flex-row items-start md:items-center gap-2'>
 					<LanguageSwitcher currentLang={currentLang} dictionary={dictionary} />
 					<Button asChild>
 						<Link href='/rezervatsiya'>{dictionary?.navbar?.make}</Link>
