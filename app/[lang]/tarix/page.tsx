@@ -89,7 +89,7 @@ export default function HistoryPage() {
 									<Card className='overflow-hidden'>
 										<div className='relative h-64'>
 											<Image
-												src={event.image || '/placeholder.svg'}
+												src={event.image || '/ '}
 												alt={event.title}
 												fill
 												className='object-cover'

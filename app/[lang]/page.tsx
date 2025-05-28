@@ -76,11 +76,12 @@ export default async function HomePage({
 							<CarouselItem key={index}>
 								<div className='relative h-[600px] w-full'>
 									<Image
-										src={image.src || '/placeholder.svg'}
+										src={image.src || '/ '}
 										alt={image.title}
 										fill
 										className='object-cover rounded-md'
 										priority={index === 0}
+										unoptimized
 									/>
 									<div className='absolute inset-0 bg-black/40 flex items-center justify-center'>
 										<div className='text-center text-white space-y-4'>
@@ -133,7 +134,7 @@ export default async function HomePage({
 							<Card key={room.id} className='overflow-hidden'>
 								<div className='relative h-48'>
 									<Image
-										src={room.image || '/placeholder.svg'}
+										src={room.image || '/ '}
 										alt={room.name}
 										fill
 										className='object-cover'

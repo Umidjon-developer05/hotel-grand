@@ -77,16 +77,9 @@ export async function middleware(request: NextRequest) {
 
 	return NextResponse.next()
 }
-
 export const config = {
 	matcher: [
-		/*
-		 * Match all request paths except for the ones starting with:
-		 * - _next/static (static files)
-		 * - _next/image (image optimization files)
-		 * - favicon.ico (favicon file)
-		 * - public (public files)
-		 */
-		'/((?!_next/static|_next/image|favicon.ico|public).*)',
+		// Barcha yo‘llar, lekin statik fayllarni chetlab o‘tamiz
+		'/((?!_next/static|_next/image|favicon.ico|.*\\.(?:jpg|jpeg|png|webp|svg|gif)).*)',
 	],
 }

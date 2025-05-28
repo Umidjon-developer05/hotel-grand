@@ -104,7 +104,7 @@ export default function RoomsPage() {
 					>
 						<div className='relative h-64'>
 							<Image
-								src={room.image || '/placeholder.svg'}
+								src={room.image || '/ '}
 								alt={room.name}
 								fill
 								className='object-cover'
