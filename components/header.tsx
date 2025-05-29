@@ -69,7 +69,9 @@ export function Header({ currentLang, dictionary }: LanguageSwitcherProps) {
 				<div className='hidden md:flex items-center gap-2'>
 					<LanguageSwitcher currentLang={currentLang} dictionary={dictionary} />
 					<Button asChild>
-						<Link href='/rezervatsiya'>{dictionary?.navbar?.make}</Link>
+						<Link href='https://wa.me/998936265703' target='_blank'>
+							{dictionary?.navbar?.make}
+						</Link>
 					</Button>
 				</div>
 
@@ -115,7 +117,6 @@ export function Header({ currentLang, dictionary }: LanguageSwitcherProps) {
 										{dictionary?.navbar?.make}
 									</Link>
 								</Button>
-								
 							</div>
 						</div>
 					</SheetContent>
