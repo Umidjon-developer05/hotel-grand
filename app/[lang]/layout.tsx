@@ -32,7 +32,7 @@ export default async function RootLayout({
 				{/* ✅ Correct use of Google Ads script */}
 				<Script
 					async
-					src='https://www.googletagmanager.com/gtag/js?id=AW-17129006543'
+					src='https://www.googletagmanager.com/gtag/js?id=AW-17130117664'
 				/>
 				<Script id='google-ads'>
 					{`
