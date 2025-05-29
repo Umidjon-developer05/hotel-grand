@@ -11,6 +11,9 @@ import {
 
 const videos = [
 	{
+		url: 'https://www.youtube.com/watch?v=deydLJOKa30',
+	},
+	{
 		url: 'https://www.youtube.com/watch?v=4p-nY0xleJs&t=1s',
 	},
 
