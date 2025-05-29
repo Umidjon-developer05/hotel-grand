@@ -115,6 +115,7 @@ export function Header({ currentLang, dictionary }: LanguageSwitcherProps) {
 										{dictionary?.navbar?.make}
 									</Link>
 								</Button>
+								
 							</div>
 						</div>
 					</SheetContent>
