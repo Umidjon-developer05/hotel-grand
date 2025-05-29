@@ -111,7 +111,9 @@ export function Header({ currentLang, dictionary }: LanguageSwitcherProps) {
 									dictionary={dictionary}
 								/>
 								<Button asChild onClick={() => setIsOpen(false)}>
-									<Link href='/rezervatsiya'>{dictionary?.navbar?.make}</Link>
+									<Link href='https://wa.me/998936265703' target='_blank'>
+										{dictionary?.navbar?.make}
+									</Link>
 								</Button>
 							</div>
 						</div>
