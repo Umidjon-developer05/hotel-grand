@@ -40,11 +40,10 @@ export default async function RootLayout({
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
             gtag('config', 'AW-17129006543');
+			 gtag('event', 'conversion', {'send_to': 'AW-17130117664/kCaECPaW29AaEKC0o-g_'});
           `}
 				</Script>
 			</body>
 		</html>
 	)
 }
-
-
