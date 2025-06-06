@@ -111,6 +111,7 @@ export default function Aloqaform({ dictionary }: { dictionary: Dictionary }) {
 								<div>
 									<p className='font-medium'>Telefon</p>
 									<p className='text-muted-foreground'>+998 93 626 57 03</p>
+									<p className='text-muted-foreground'>+998 91 975 00 00</p>
 								</div>
 							</div>
 							<div className='flex items-center space-x-3'>
@@ -118,7 +119,7 @@ export default function Aloqaform({ dictionary }: { dictionary: Dictionary }) {
 								<div>
 									<p className='font-medium'>Email</p>
 									<p className='text-muted-foreground'>
-										otabekmurodov038@gmail.com
+										otabekmurodov@yahoo.com
 									</p>
 								</div>
 							</div>

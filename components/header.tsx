@@ -44,7 +44,7 @@ export function Header({ currentLang, dictionary }: LanguageSwitcherProps) {
 			<div className='container px-4 py-3 flex items-center justify-between'>
 				{/* Logo */}
 				<Link href='/' className='text-xl font-bold'>
-					Hotel Grand Nodirbek
+					Shapiran
 				</Link>
 
 				{/* Desktop Navigation */}

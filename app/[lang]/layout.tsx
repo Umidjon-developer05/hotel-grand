@@ -7,9 +7,9 @@ import { getDictionary } from '@/lib/dictionaries'
 import Script from 'next/script' // ✅ Import next/script
 
 export const metadata: Metadata = {
-	title: 'Tarixiy Mehmonxona - 400 Yillik Tarix',
+	title: 'Historic Hotel - 400 Years Of History',
 	description:
-		"Bizning mehmonxonamiz 1625 yilda qurilgan bo'lib, 400 yillik boy tarixga ega.",
+		'Our hotel was built in 1625 and has a rich history of 400 years.',
 }
 
 export default async function RootLayout({

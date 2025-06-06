@@ -19,7 +19,7 @@ export function Footer({ dictionary }: LanguageSwitcherProps) {
 			<div className='container py-8 md:py-12'>
 				<div className='grid grid-cols-1 md:grid-cols-3 gap-8'>
 					<div>
-						<h3 className='text-lg font-semibold mb-4'>Ijtimoiy tarmoqlar</h3>
+						<h3 className='text-lg font-semibold mb-4'>Social media</h3>
 						<div className='flex space-x-4'>
 							<Link
 								href='https://www.facebook.com/stories/311182572833865/UzpfSVNDOjcwNTA2NTc3MTg4MTY1MQ==/?view_single=1'
@@ -71,12 +71,13 @@ export function Footer({ dictionary }: LanguageSwitcherProps) {
 						</h3>
 						<div className='space-y-2 text-sm text-muted-foreground'>
 							<p>Tel: +998 93 626 57 03</p>
-							<p>Email: otabekmurodov038@gmail.com</p>
+							<p>Tel: +998 91 975 00 00</p>
+							<p>Email: otabekmurodov@yahoo.com</p>
 						</div>
 					</div>
 
 					<div>
-						<h3 className='text-lg font-semibold mb-4'>Sayt haqida</h3>
+						<h3 className='text-lg font-semibold mb-4'>About the site</h3>
 						<p className='text-sm text-muted-foreground'>
 							{dictionary?.footer?.bio ||
 								"Bizning saytimiz sizga mehmonxonamiz haqida ma'lumot beradi, xonalarni bron qilish imkonini yaratadi va tarixiy joylarimizni kashf etishga yordam beradi."}
