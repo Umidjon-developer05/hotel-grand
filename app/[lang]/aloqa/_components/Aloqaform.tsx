@@ -54,7 +54,7 @@ export default function Aloqaform({ dictionary }: { dictionary: Dictionary }) {
 								<CheckCircle className='h-16 w-16 text-green-500 mx-auto mb-4' />
 								<h3 className='text-xl font-semibold mb-2'>Xabar yuborildi!</h3>
 								<p className='text-muted-foreground'>
-									Tez orada siz bilan bog&apos;lanamiz.
+									Soon connect with you let&apos;s go.
 								</p>
 							</div>
 						) : (
@@ -81,7 +81,7 @@ export default function Aloqaform({ dictionary }: { dictionary: Dictionary }) {
 									/>
 								</div>
 								<div className='space-y-2'>
-									<Label htmlFor='message'>Xabar</Label>
+									<Label htmlFor='message'>Message</Label>
 									<Textarea
 										id='message'
 										placeholder='Xabaringizni yozing...'
@@ -92,7 +92,7 @@ export default function Aloqaform({ dictionary }: { dictionary: Dictionary }) {
 									/>
 								</div>
 								<Button type='submit' className='w-full'>
-									Xabar yuborish
+									Send message
 								</Button>
 							</form>
 						)}
@@ -103,13 +103,13 @@ export default function Aloqaform({ dictionary }: { dictionary: Dictionary }) {
 				<div className='space-y-6'>
 					<Card>
 						<CardHeader>
-							<CardTitle>Kontakt ma&apos;lumotlari</CardTitle>
+							<CardTitle>Contact ma&apos; information</CardTitle>
 						</CardHeader>
 						<CardContent className='space-y-4'>
 							<div className='flex items-center space-x-3'>
 								<Phone className='h-5 w-5 text-primary' />
 								<div>
-									<p className='font-medium'>Telefon</p>
+									<p className='font-medium'>Phone</p>
 									<p className='text-muted-foreground'>+998 93 626 57 03</p>
 									<p className='text-muted-foreground'>+998 91 975 00 00</p>
 								</div>
@@ -126,17 +126,15 @@ export default function Aloqaform({ dictionary }: { dictionary: Dictionary }) {
 							<div className='flex items-center space-x-3'>
 								<Clock className='h-5 w-5 text-primary' />
 								<div>
-									<p className='font-medium'>Ish vaqti</p>
-									<p className='text-muted-foreground'>
-										24/7, Dushanba - Yakshanba
-									</p>
+									<p className='font-medium'>Working hours</p>
+									<p className='text-muted-foreground'>24/7, Monday-Sunday</p>
 								</div>
 							</div>
 							<div className='flex items-center space-x-3'>
 								<MapPin className='h-5 w-5 text-primary' />
 								<div>
 									<p className='font-medium'>Manzil</p>
-									<p className='text-muted-foreground'>Bukhara shahar</p>
+									<p className='text-muted-foreground'>Bukhara city</p>
 								</div>
 							</div>
 						</CardContent>
@@ -145,7 +143,7 @@ export default function Aloqaform({ dictionary }: { dictionary: Dictionary }) {
 					{/* Map */}
 					<Card>
 						<CardHeader>
-							<CardTitle>Bizning joylashuvimiz</CardTitle>
+							<CardTitle>Our location</CardTitle>
 						</CardHeader>
 						<CardContent>
 							<div className='relative h-64 bg-muted rounded-lg overflow-hidden'>
