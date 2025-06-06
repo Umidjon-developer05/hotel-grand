@@ -54,7 +54,7 @@ export default function Aloqaform({ dictionary }: { dictionary: Dictionary }) {
 								<CheckCircle className='h-16 w-16 text-green-500 mx-auto mb-4' />
 								<h3 className='text-xl font-semibold mb-2'>Xabar yuborildi!</h3>
 								<p className='text-muted-foreground'>
-									Soon connect with you let&apos;s go.
+									Soon connect with you lets go.
 								</p>
 							</div>
 						) : (
@@ -103,7 +103,7 @@ export default function Aloqaform({ dictionary }: { dictionary: Dictionary }) {
 				<div className='space-y-6'>
 					<Card>
 						<CardHeader>
-							<CardTitle>Contact ma&apos; information</CardTitle>
+							<CardTitle>Contact information</CardTitle>
 						</CardHeader>
 						<CardContent className='space-y-4'>
 							<div className='flex items-center space-x-3'>
@@ -133,7 +133,7 @@ export default function Aloqaform({ dictionary }: { dictionary: Dictionary }) {
 							<div className='flex items-center space-x-3'>
 								<MapPin className='h-5 w-5 text-primary' />
 								<div>
-									<p className='font-medium'>Manzil</p>
+									<p className='font-medium'>Location</p>
 									<p className='text-muted-foreground'>Bukhara city</p>
 								</div>
 							</div>
