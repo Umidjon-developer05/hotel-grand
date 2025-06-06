@@ -46,7 +46,7 @@ export default function Aloqaform({ dictionary }: { dictionary: Dictionary }) {
 				{/* Contact Form */}
 				<Card>
 					<CardHeader>
-						<CardTitle>Xabar yuborish</CardTitle>
+						<CardTitle>Send message</CardTitle>
 					</CardHeader>
 					<CardContent>
 						{isSubmitted ? (
