@@ -11,7 +11,7 @@ import {
 
 const videos = [
 	{
-		url: 'https://youtu.be/Cgb0XzWY8EA?si=S73Q63_--1b2pfAH',
+		url: 'https://www.youtube.com/watch?v=Cgb0XzWY8EA',
 	},
 
 	{
